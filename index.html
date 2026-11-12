@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Siti Faridah — Web Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="#home" class="logo">Siti<span>Faridah</span></a>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#skills">Skill</a></li>
+      <li><a href="#projects">Proyek</a></li>
+      <li><a href="#experience">Pengalaman</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+  </nav>
+
+  <!-- HERO / HOME -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-greeting">Halo, saya</p>
+      <h1>Siti Faridah</h1>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">Lihat Proyek</a>
+        <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/sitifaridahl" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/siti-faridah-959a5135b" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:sitifarida00999@gmail.com">Email</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <!-- GANTI foto.jpg dengan nama file fotomu jika ada di folder yang sama -->
+      <img src="foto.jpeg" alt="Foto Siti Faridah" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');" />
+      <div class="photo-fallback">SF</div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <h2 class="section-title">Tentang Saya</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          Saya lulusan <strong>SMKN 1 Kawali</strong> jurusan
+          <strong>Rekayasa Perangkat Lunak (RPL)</strong> dengan keterampilan
+          dasar HTML, CSS, Laravel, dan MySQL. Saya memiliki pengalaman
+          membuat dan mengembangkan website serta mengelola database melalui
+          proyek sekolah dan Praktik Kerja Lapangan (PKL). Saya siap
+          berkontribusi di bidang pengembangan website dan teknologi informasi
+          dengan mengutamakan ketelitian, tanggung jawab, dan kemauan untuk
+          terus belajar.
+        </p>
+      </div>
+      <div class="about-stats">
+        <div class="stat"><strong>3</strong><span>Proyek Website</span></div>
+        <div class="stat"><strong>5</strong><span>Bahasa &amp; Tools</span></div>
+        <div class="stat"><strong>2</strong><span>Sertifikasi</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <h2 class="section-title">Keterampilan</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Teknis</h3>
+        <ul>
+          <li><span>HTML</span><div class="bar"><i style="width:60%"></i></div></li>
+          <li><span>CSS</span><div class="bar"><i style="width:55%"></i></div></li>
+          <li><span>PHP</span><div class="bar"><i style="width:50%"></i></div></li>
+          <li><span>MySQL</span><div class="bar"><i style="width:65%"></i></div></li>
+          <li><span>Laravel</span><div class="bar"><i style="width:60%"></i></div></li>
+          <li><span>Figma</span><div class="bar"><i style="width:65%"></i></div></li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Non-Teknis</h3>
+        <div class="tags">
+          <span>Manajemen Waktu</span>
+          <span>Tanggung Jawab</span>
+          <span>Kemauan Belajar</span>
+        </div>
+        <h3 style="margin-top: 1.5rem;">Sertifikasi</h3>
+        <ul class="cert-list">
+          <li>✅ Uji Kompetensi Keahlian (UKK) — RPL (Sept 2026)</li>
+          <li>✅ TOEIC — Test of English for International Communication (Okt 2026)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <h2 class="section-title">Proyek Sekolah</h2>
+    <p class="section-sub">Beberapa proyek yang pernah saya kerjakan.</p>
+
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <article class="project-card">
+        <div class="project-info">
+          <h3>Website Company Profile</h3>
+          <p class="project-date">September 2026</p>
+          <p>Website profil perusahaan (Laravel) dengan halaman produk, galeri, artikel, profil, dan kontak.</p>
+          <div class="project-tags"><span>Laravel</span><span>MySQL</span><span>PHP</span></div>
+          <a href="http://company-profile.test/public/" class="project-btn" target="_blank" rel="noopener noreferrer">Buka Demo</a>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card">
+        <div class="project-info">
+          <h3>Website Kasir</h3>
+          <p class="project-date">Mei 2026</p>
+          <p>Sistem kasir untuk transaksi penjualan, pengelolaan barang, dan pencatatan transaksi.</p>
+          <div class="project-tags"><span>PHP</span><span>MySQL</span><span>CRUD</span></div>
+          <a href="http://laravel-kasir.test/login" class="project-btn" target="_blank" rel="noopener noreferrer">Buka Demo</a>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card">
+        <div class="project-info">
+          <h3>Website Data Tamu</h3>
+          <p class="project-date">November 2025</p>
+          <p>Sistem pencatatan data pengunjung dengan fitur tambah, edit, hapus, dan tampil data.</p>
+          <div class="project-tags"><span>PHP</span><span>MySQL</span><span>CRUD</span></div>
+          <a href="http://localhost/bukutamu/login.php" class="project-btn" target="_blank" rel="noopener noreferrer">Buka Demo</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE & EDUCATION -->
+  <section class="section section-alt" id="experience">
+    <h2 class="section-title">Pengalaman &amp; Pendidikan</h2>
+    
+    <div class="exp-grid">
+      <!-- Pengalaman Kerja -->
+      <div class="exp-card">
+        <h3>Praktik Kerja Lapangan (PKL)</h3>
+        <p class="exp-meta">PT Inovindo Digital Media · Nov 2026 – Feb 2027</p>
+        <ul class="exp-list">
+          <li>Beradaptasi dengan lingkungan dan budaya kerja profesional.</li>
+          <li>Melaksanakan tugas sesuai arahan pembimbing.</li>
+          <li>Menerapkan pengetahuan dan keterampilan di bidang teknologi informasi.</li>
+          <li>Mengembangkan kemampuan komunikasi, kerja sama tim, dan tanggung jawab.</li>
+        </ul>
+      </div>
+
+      <!-- Pendidikan -->
+      <div class="exp-card">
+        <h3>SMK Negeri 1 Kawali</h3>
+        <p class="exp-meta">Jurusan Rekayasa Perangkat Lunak · 2024 – 2027</p>
+        <p class="exp-desc">Fokus pada pengembangan perangkat lunak, pemrograman web, dan pengelolaan database melalui pembelajaran teori dan praktik.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <h2 class="section-title">Hubungi Saya</h2>
+    <div class="contact-grid">
+      
+      <!-- Email -->
+      <a class="contact-card" href="mailto:sitifarida00999@gmail.com">
+        <span>📧</span>
+        <h3>Email</h3>
+        <p>sitifa00999@gmail.com</p>
+        <div class="click-text">Klik untuk buka</div>
+      </a>
+
+      <!-- Telepon -->
+      <a class="contact-card" href="tel:088224458516">
+        <span>📱</span>
+        <h3>Telepon</h3>
+        <p>0882-2445-8516</p>
+        <div class="click-text">Klik untuk telepon</div>
+      </a>
+
+      <!-- LinkedIn -->
+      <a class="contact-card" href="https://www.linkedin.com/in/siti-faridah-959a5135b " target="_blank" rel="noopener">
+        <span>💼</span>
+        <h3>LinkedIn</h3>
+        <p>sitifaridah</p>
+        <div class="click-text">Klik untuk buka</div>
+      </a>
+
+      <!-- GitHub -->
+      <a class="contact-card" href="https://github.com/sitifaridah11" target="_blank" rel="noopener">
+        <span>🐙</span>
+        <h3>GitHub</h3>
+        <p>sitifaridah</p>
+        <div class="click-text">Klik untuk buka</div>
+      </a>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Siti Faridah.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
